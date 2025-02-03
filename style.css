@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 110px; /* 預留出導航欄的高度 */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box; /* 確保 padding 和 border 被包含在寬度內 */
+    /* 固定導航欄 */
+    position: fixed; /* 固定在視窗頂部 */
+    top: 0; /* 距離頂部 0 */
+    left: 0; /* 距離左側 0 */
+    width: 100%; /* 導航欄寬度為全屏 */
+    z-index: 1000; /* 保證在其他內容上層 */
+    background-color: #fff; /* 添加背景色，防止滾動時透明 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 添加輕微陰影效果 */
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: left; /* 向左對齊 */
+    margin-left: 50px; /* 向左移動一些，數值可以根據需要調整 */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    font-weight: bold;
+    margin-right: 50px; /* 往左移一點，數值可調整 */
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+}
+
+.work-section p {
+    word-wrap: break-word;
+    text-align: center;
+    font-weight: bold;
+    max-width: 60%;  /* 限制最大宽度 */
+    margin: 0 auto;  /* 居中显示 */
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%; 
+    height: auto; 
+    max-width: 500px; 
+    aspect-ratio: 1 / 1; 
+    object-fit: cover; 
+    border-radius: 10px; /* 圓角效果 */
+}
+
+.hero-text {
+    flex: 1;
+    padding: 2rem;
+    font-family: 'Playfair Display', serif;
+    max-width: 60%; 
+}
+
+.hero-text h2 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.hero-text p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.work-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 每行三列 */
+    gap: 30px; /* 控制图片间的间距 */
+    margin: 2rem auto;
+    width: 100%; /* 设置宽度为 100% */
+    max-width: 1200px; /* 限制容器的最大宽度 */
+    box-sizing: border-box;
+}
+
+
+
+.work-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* 保持图片比例并裁剪 */
+    max-width: 100%;
+    max-height: 300px;
+}
+
+
+
+.work-item img:hover {
+    transform: scale(1.05); /* 懸停時放大圖片 */
+}
+
+.work-item h3 {
+    margin-top: 8px;
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    color: #333;
+}
+
+

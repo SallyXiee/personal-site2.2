@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 110px; /* 預留出導航欄的高度 */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box; /* 確保 padding 和 border 被包含在寬度內 */
+    /* 固定導航欄 */
+    position: fixed; /* 固定在視窗頂部 */
+    top: 0; /* 距離頂部 0 */
+    left: 0; /* 距離左側 0 */
+    width: 100%; /* 導航欄寬度為全屏 */
+    z-index: 1000; /* 保證在其他內容上層 */
+    background-color: #fff; /* 添加背景色，防止滾動時透明 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 添加輕微陰影效果 */
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: left; /* 向左對齊 */
+    margin-left: 50px; /* 向左移動一些，數值可以根據需要調整 */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    font-weight: bold;
+    margin-right: 50px; /* 往左移一點，數值可調整 */
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.project-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+.project-details {
+    display: block;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+.project-details div {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.project-images {
+    display: grid;
+    grid-template-columns: 1fr; /* 一行一张图 */
+    gap: 1rem;
+}
+
+.project-images img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* 去掉圆角效果 */
+}
+
+
+.back-button {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #555;
+}
+
+
+#map {
+    width: 60%;
+    height: 800px;
+    margin: 5em auto;
+}
