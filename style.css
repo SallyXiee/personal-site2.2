@@ -6,6 +6,11 @@ body {
     padding-top: 110px; /* 預留出導航欄的高度 */
 }
 
+a {
+    text-decoration: none; /* 去掉所有链接的下划线 */
+    color: inherit; /* 保持原有文字颜色 */
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -124,4 +129,25 @@ body {
     color: #333;
 }
 
-
+footer {
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-top: 1px solid #aaa;
+  }
+  
+  p.footer-text {
+    font-family: 'Source Code Pro', monospace;
+    font-size: .75rem;
+    font-weight: 300;
+    text-align: center;
+  }
+  
+  footer a,
+  a:visited {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid;
+    border-color: #ff8800;
+  }

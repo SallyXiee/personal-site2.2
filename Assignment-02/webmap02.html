@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Detail</title>
+    <link rel="stylesheet" href="../style_details.css">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.js"></script>
+</head>
+<body>
+    <header class="navbar">
+        <h1 class="logo">Xinqi Xie (Sally)</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html#work">Work</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+         <div class="map-container">
+            <div id="map"></div>
+         </div>
+
+        <div id='map'></div>
+        <div id='title' class="title">
+            <h1>Examining the Relationship Between Community Age and Public Facilities</h1>
+            <p>This map investigates the relationship between median age, open spaces, and NYCHA facilities to assess whether public resources are equitably distributed across different age groups.  By analyzing these spatial patterns, we can identify potential gaps in service distribution and evaluate whether facilities effectively meet the needs of different age groups.</p>
+            <hr>
+            <div id="median-age-legend" class="legend">
+                <h4>Median Age</h4>
+                <div><span style="background-color: #ede7f6"></span> ≤ 33 (Lighter Purple)</div>
+                <div><span style="background-color: #d1c4e9"></span> 34 - 38</div>
+                <div><span style="background-color: #b39ddb"></span> 39 - 43</div>
+                <div><span style="background-color: #9575cd"></span> 44 - 50</div>
+                <div><span style="background-color: #7e57c2"></span> ≥ 51 (Darkest Purple)</div>
+            </div>
+            <div id="nycha-legend" class="legend">
+                <h4>NYCHA Facilities</h4>
+                <div><span style="background-color: #EA345C"></span> Child Care</div>
+                <div><span style="background-color: #AC4BEA"></span> Community Center</div>
+                <div><span style="background-color: #F3C81F"></span> Senior Center</div>
+                <div><span style="background-color: #4064A3"></span> Health Clinic</div>
+                <div><span style="background-color: #969696"></span> Vacant</div>
+                <div><span style="background-color: #888888"></span> Other</div>
+                <div><span style="background-color: #EF788E"></span> Child Care - Early Learn</div>
+                <div><span style="background-color: #77A0DB"></span> Religious Services</div>
+            </div>
+            <div id="open-space-legend" class="legend">
+                <h4>Public Open Spaces</h4>
+                <div>
+                    <span style="background-color: #B5E26D; opacity: 0.5"></span> Parks, Green Spaces, and Recreational Areas
+                </div>
+            </div>
+        </div>
+        </div>
+        <script type='text/javascript' src="map02.js"></script>
+</body>
+
+<div class="container">
+    <a href="../index.html" class="back-button">Back to Home</a>
+ </div>
+
+</html>
