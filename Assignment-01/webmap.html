@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Detail</title>
-    <link rel="stylesheet" href="../style_details.css">
+    <link rel="stylesheet" href="assignment3.css">
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.css" rel="stylesheet">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.js"></script>
 </head>
@@ -19,14 +19,72 @@
             </ul>
         </nav>
     </header>
-    
-<body>
-        <div id='map'></div>
-        <script type='text/javascript' src="map.js"></script>
+
+    <!-- 第一張地圖 -->
+    <div class="map-container">
+        <div class="title">
+            <h1>Annual municipal solid waste generated per capita 2023 (kilograms/capita)</h1>
+            <p>By 2050, the world is expected to generate 3.40 billion tons of waste annually, increasing drastically from today’s 2.01 billion tons. This map gives us an idea of the amount of solid waste produced per person per year in different countries around the world.</p>
+            <hr>
+            <div id="legend1" class="legend">
+                <h4>Projection</h4>
+                <div>Mercator</div><br>
+                <h4>Equal Intervals</h4>
+                <div><span style="background-color: #f8d5cc"></span> 0 - 200 kg</div>
+                <div><span style="background-color: #f4a582"></span> 200 - 400 kg</div>
+                <div><span style="background-color: #d6604d"></span> 400 - 600 kg</div>
+                <div><span style="background-color: #b2182b"></span> 600 - 800 kg</div>
+                <div><span style="background-color: #67001f"></span> 800+ kg</div>
+            </div>
+        </div>
+        <div id="map1" class="map"></div>
+    </div>
+
+    <!-- 第二張地圖 -->
+    <div class="map-container">
+        <div class="title">
+            <h1>Annual municipal solid waste generated per capita 2023 (kilograms/capita)</h1>
+            <p>By 2050, the world is expected to generate 3.40 billion tons of waste annually, increasing drastically from today’s 2.01 billion tons. This map gives us an idea of the amount of solid waste produced per person per year in different countries around the world.</p>
+            <hr>
+            <div id="legend2" class="legend">
+                <h4>Projection</h4>
+                <div>LambertConformalConic</div><br>
+                <h4>Quantiles</h4>
+                <div><span style="background-color: #f8d5cc"></span> Lowest 20%</div>
+                <div><span style="background-color: #f4a582"></span> 20% - 40%</div>
+                <div><span style="background-color: #d6604d"></span> 40% - 60%</div>
+                <div><span style="background-color: #b2182b"></span> 60% - 80%</div>
+                <div><span style="background-color: #67001f"></span> Highest 20%</div>
+            </div>
+        </div>
+        <div id="map2" class="map"></div>
+    </div>
+
+    <!-- 第三張地圖 -->
+    <div class="map-container">
+        <div class="title">
+            <h1>Annual municipal solid waste generated per capita 2023 (kilograms/capita)</h1>
+            <p>By 2050, the world is expected to generate 3.40 billion tons of waste annually, increasing drastically from today’s 2.01 billion tons. This map gives us an idea of the amount of solid waste produced per person per year in different countries around the world.</p>
+            <hr>
+            <div id="legend3" class="legend">
+                <h4>Projection</h4>
+                <div>EqualEarth</div><br>
+                <h4>Natural Breaks (Jenks)</h4>
+                <div><span style="background-color: #d3d3d3"></span> No Data</div>
+                <div><span style="background-color: #f8d5cc"></span> 37 - 189 kg</div>
+                <div><span style="background-color: #f4a582"></span> 189 - 319 kg</div>
+                <div><span style="background-color: #d6604d"></span> 319 - 476 kg</div>
+                <div><span style="background-color: #b2182b"></span> 476 - 710 kg</div>
+                <div><span style="background-color: #67001f"></span> 710 - 1121 kg</div>
+            </div>
+        </div>
+        <div id="map3" class="map"></div>
+    </div>
+
+    <script type='text/javascript' src="map.js"></script>
+
+    <div class="container">
+        <a href="../index.html" class="back-button">Back to Home</a>
+    </div>
 </body>
-
-<div class="container">
-   <a href="../index.html" class="back-button">Back to Home</a>
-</div>
-
 </html>
