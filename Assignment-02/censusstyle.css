@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 110px; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; /* 導航欄寬度為全屏 */
+    z-index: 1000; /* 保證在其他內容上層 */
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    font-weight: bold;
+    margin-right: 50px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+}
+
+#map {
+    position: absolute;
+    top: 110px; 
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 110px); 
+    z-index: 0; 
+}
+
+#legend-container {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.9); 
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+}
+
+#legend-container p {
+    margin: 0 0 10px;
+    font-weight: bold;
+    font-size: 11px;
+    text-align: left;
+    line-height: 1.4;
+    font-family: 'Open Sans', sans-serif; 
+}
+
+.legend {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.legend h4 {
+    margin: 0 0 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+.legend div span {
+    border-radius: 3px;
+    display: inline-block;
+    height: 12px;
+    margin-right: 5px;
+    width: 12px;
+    border: 1px solid #ccc;
+}
+
+
+.mapboxgl-popup-content {
+    font-size: 14px;
+    color: #333;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(5px);
+}
+
+.mapboxgl-popup-tip {
+    border-top-color: rgba(255, 255, 255, 0.95) !important;
+}
+

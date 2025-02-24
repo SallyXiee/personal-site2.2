@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Detail</title>
+    <link rel="stylesheet" href="censusstyle.css">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.js"></script>
+</head>
+<body>
+    <header class="navbar">
+        <h1 class="logo">Xinqi Xie (Sally)</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html#work">Work</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    .legend {
+        background-color: #fff;
+        border-radius: 3px;
+        bottom: 30px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        padding: 10px;
+        position: absolute;
+        right: 10px;
+        z-index: 1;
+    }
+
+    .legend h4 {
+        margin: 0 0 10px;
+    }
+
+    .legend div span {
+        border-radius: 50%;
+        display: inline-block;
+        height: 10px;
+        margin-right: 5px;
+        width: 10px;
+    }
+</style>
+</head>
+<body>
+
+<div id="map"></div>
+
+<div id="legend-container">
+    <p><strong>This map shows median home values in the U.S. at state and county levels, using data from the 2021 ACS 5-Year Estimates (B25077_001E). I chose this dataset to explore housing affordability and regional disparities in home prices, where coastal states tend to have higher prices, and urban areas contrast sharply with rural regions.
+        <br><br>
+        To ensure a balanced visualization, I used quantile classification, which evenly distributes data into five groups. This prevents extreme values from dominating the map, making patterns clearer and easier to interpret.</strong></p>
+<div id="state-legend" class="legend">
+    <h4>Price Range (State)</h4>
+    <div><span style="background-color: #723122"></span>$1,225,900+ (Top 20%)</div>
+    <div><span style="background-color: #B86B25"></span>$215,800 - $1,225,900 (60%-80%)</div>
+    <div><span style="background-color: #DA9C20"></span>$157,500 - $215,800 (40%-60%)</div>
+    <div><span style="background-color: #EED322"></span>$123,700 - $157,500 (20%-40%)</div>
+    <div><span style="background-color: #F2F12D"></span>Below $123,700 (Bottom 20%)</div>
+</div>
+
+<div id="county-legend" class="legend" style="display: none">
+    <h4>Price Range (County)</h4>
+    <div><span style="background-color: #723122"></span>$1,225,900+ (Top 20%)</div>
+    <div><span style="background-color: #B86B25"></span>$215,800 - $1,225,900 (60%-80%)</div>
+    <div><span style="background-color: #DA9C20"></span>$157,500 - $215,800 (40%-60%)</div>
+    <div><span style="background-color: #EED322"></span>$123,700 - $157,500 (20%-40%)</div>
+    <div><span style="background-color: #F2F12D"></span>Below $123,700 (Bottom 20%)</div>
+</div>
+</div>
+
+<!-- ✅ 加载 JavaScript -->
+<script type='text/javascript' src="censusmap.js"></script>
+
+</body>
+</html>
