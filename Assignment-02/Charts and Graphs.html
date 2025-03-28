@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Detail</title>
+    <link rel="stylesheet" href="charts.css">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.js"></script>
+</head>
+<body>
+    <header class="navbar">
+        <h1 class="logo">Xinqi Xie (Sally)</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html#work">Work</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+ <div class="container">
+    <h1>Health impacts of air pollution NYC</h1>
+
+    <h2>1. Child Asthma Emergency Visit Rate vs Poverty Rate</h2>
+    <img src="imgforcharts/scatter.png" alt="Poverty vs Asthma Scatter Plot">
+    <p>
+      This scatter plot visualises the relationship between child asthma emergency department (ED) visit rates and poverty rates across New York City boroughs. There’s a clear positive correlation—higher poverty rates are often associated with higher asthma ED visit rates. The Bronx stands out with multiple high-poverty, high-visit-rate neighbourhoods, highlighting health inequities.
+    </p>
+  
+    <h2>2. Estimated Annual Asthma Emergency Visits by Age Group and Neighborhood</h2>
+    <img src="imgforcharts/community ae visit.png" alt="Stacked Bar of Asthma Visits by Age and Neighborhood">
+    <p>
+      This stacked bar chart shows the estimated annual asthma ED visits broken down by age group. Children (orange) contribute significantly to total visits in high-burden areas like Bedford Stuyvesant - Crown Heights and High Bridge - Morrisania. The disparity between neighbourhoods is evident, with some areas recording over 1,500 visits annually.
+    </p>
+  
+    <h2>3. Top 20 Neighborhoods by Child Asthma ED Visit Rate (Since 2012)</h2>
+    <img src="imgforcharts/child ea neigh.png" alt="Heatmap of Child Asthma ED Visit Rate Over Time">
+    <p>
+      This heatmap tracks child asthma ED visit rates over time in the 20 most affected NYC neighbourhoods. East Harlem and Central Harlem consistently report the highest rates. While some decline is visible in recent years, the intensity of the issue in certain communities remains prominent.
+    </p>
+  
+    <h2>4. Asthma ED Visit Rate for Children Over Time by Borough</h2>
+    <img src="imgforcharts/child over time.png" alt="Line Chart of Asthma ED Rates Over Time">
+    <p>
+      This line chart presents the asthma ED visit rates for children by borough over several time periods. While all boroughs show a downward trend, the Bronx still leads significantly, with rates nearly double those in other areas in earlier years. The gap has narrowed but not disappeared.
+    </p>
+  
+    <h2>5. Neighborhood Poverty Rates by Borough</h2>
+    <img src="imgforcharts/poverty neigh.png" alt="Dot Plot of Poverty Rates by Borough">
+    <p>
+      This dot plot breaks down neighbourhood-level poverty rates across boroughs. The Bronx clearly has the highest concentration of high-poverty neighbourhoods, which helps explain the borough’s elevated asthma ED visit rates shown in earlier charts. Staten Island, by contrast, maintains some of the lowest poverty levels.
+    </p>
+  
+    <h2>Google Colab Notebook</h2>
+    <p>
+      You can view the Google Colab notebook used to create these charts here:<br>
+      <a href="https://colab.research.google.com/drive/1yeAIyWyWZkeGJBynSWsvyyYG9F0YqVxM#scrollTo=5hr0EoK3CQ4l" target="_blank">View My Google Colab Notebook</a>
+      https://colab.research.google.com/drive/1yeAIyWyWZkeGJBynSWsvyyYG9F0YqVxM#scrollTo=5hr0EoK3CQ4l
+    </p>
+  
+  </div>
+  </body>
+  </html>
+  
+
+<div class="container">
+    <a href="../index.html" class="back-button">Back to Home</a>
+ </div>
+
+</html>
